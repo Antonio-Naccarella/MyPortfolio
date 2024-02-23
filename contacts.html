@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antonio Naccarella | Frontend Developer</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/coding.png">
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+        (function(){
+        emailjs.init({
+            publicKey: "GBOO51viKthoB4VTN",
+        });
+        })();
+        </script>
+    <script src="assets/js/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html"><img src="assets/img/logo.png" alt="logo"></a></div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Progetti</a></li>
+                <li><a href="contacts.html">Contatti</a></li>
+            </ul>
+
+        </nav>   
+           <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+    </header>
+    <article>
+        <div class="spacer"></div>
+        <section class="contacts">
+            <h2>Contacts</h2>
+                    <p>Restiamo in contatto!</p>
+            <form class="contacts-form">
+                <div class="form-input">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="name" required/>
+                </div>
+                <div class="form-input">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-input">
+                    <label for="message">Messaggio</label>
+                    <textarea name="message" id="message" rows="4" required></textarea>
+                </div>                
+            <button type="submit" onclick="sendMail()">Invia</button>
+            </form>
+        </section>
+    </article>
+    <div class="spacer"></div>
+    <footer>
+        <p>Antonio Naccarella</p>
+        <a href="https://github.com/Antonio-Naccarella" target="_blank"><img src="assets/img/github-logo-white.png" alt="GitHub"></a>
+        <a href="https://www.linkedin.com/in/antonio-naccarella-31976725a/" target="_blank"> <img src="assets/img/LI-In-Bug.png" alt="Linkedin"></a>
+    </footer>
+</body>

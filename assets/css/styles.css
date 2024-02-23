@@ -14,11 +14,13 @@
 body{
     font-family: var(--font);
     font-size: 20px;
+    background-color: var(--sfondo);
 }
 
 
 header{
     position: fixed;
+    z-index: 9999;
     width: 100%;
     border-bottom: 2px solid var(--second-color);
     background-color: var(--sfondo);
@@ -153,7 +155,7 @@ header nav li {
     gap: 20px;
 }
 
-.testo {
+.about {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -165,16 +167,16 @@ header nav li {
     gap: 20px;
 }
 .presentation img{
-    max-width: 150px;
-    border-radius: 50px;
-    border: 1px solid black;
+    max-width: 200px;
+    border-radius: 50%;
+    border: 1px solid var(--second-color);
 }
 
 
 .about img{
-    max-width: 200px;
-    border-radius: 50px;
-    border: 1px solid black;
+    width: 100%;
+    border-radius: 3%;
+    border: 1px solid var(--second-color);
 
 }
 section {
@@ -184,7 +186,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 .bakery, .dna{
@@ -196,8 +198,9 @@ section {
 
 .projects img{
     max-width: 100%;
-    border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 2%;
+    border: 1px solid var(--second-color);
+
 }
 
 .card img{
@@ -209,6 +212,14 @@ section {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+}
+.card a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+.card a:hover{
+    color: var(--second-color);
+    text-decoration: underline;
 }
 .lenguages img, .git-linkedin img{
     max-width: 40px;
@@ -228,12 +239,12 @@ section {
     gap: 20px;
     padding: 20px;
     border-radius: 30px;
-    border: 1px solid var(--main-color);
+    border: 1px solid var(--second-color);
 }
 .contacts-form input,
 .contacts-form textarea {
     border-radius: 10px;
-    border: 1px solid var(--main-color);
+    border: 1px solid var(--second-color);
     width: 150px;
     height: 30px;
     outline: none;
@@ -256,13 +267,12 @@ section {
     width: 50%;
     height: 40px;
     border-radius: 15px;
-    border: 1px solid var(--main-color);
-    color: var(--main-color);
+    border: 1px solid var(--second-color);
     background: var(--sfondo);
-    font-family: var(--font);
 }
 
 footer{
+
     height: 150px;
     display: flex;
     justify-content: center;
@@ -275,10 +285,27 @@ footer{
 footer img{
     max-width: 30px;
 }
+.freccia{
+    margin-right: 30px;
+    float: right;
+    transform: rotate(-90deg) scale(.8);
+    transition: all 600ms ease-in-out;
 
+}
+.freccia:hover{
+     transform: rotate(270deg) scale(1) ;
+     transition: all 600ms ease-in-out;
+}
+.io{
+scale: .8; opacity:0;
+animation: fade-in linear forwards;
+animation-timeline: view();
+animation-range: entry 20%;
+}
 
-
-
+@keyframes fade-in {
+    to {scale: 1; opacity: 1;}
+}
 
 
 
@@ -336,7 +363,7 @@ footer img{
         transform: scale(1,1);
     }
 
-    .spacer{height: 210px;}
+    .spacer{height: 180px;}
     .presentation {
         flex-direction: row;
         justify-content: center;
@@ -344,13 +371,15 @@ footer img{
     }
   
     .testo{
-        line-height: 1em;
         width: 60%;
     }
 
     .about {
         flex-direction: row;
         justify-content: center;
+    }
+    .about img{
+        max-width: 400px;
     }
     .bakery, .dna {
         flex-direction: row;

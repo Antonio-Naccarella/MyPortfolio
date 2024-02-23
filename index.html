@@ -24,9 +24,9 @@
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Progetti</a></li>
-                <li><a href="#contacts">Contatti</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Progetti</a></li>
+                <li><a href="contacts.html">Contatti</a></li>
             </ul>
 
         </nav>   
@@ -38,8 +38,8 @@
 <article>
     <section>
         <div class="presentation">
-            <img src="assets/img/io.jpg" alt="Antonio Naccarella">
-            <div class="testo">
+            <img  src="assets/img/myAvatar (1).png" alt="Antonio Naccarella">
+            <div class="card">
                 <h1>Frontend Developer</h1>
             <h2>Antonio Naccarella</h2>
             <p>Ciao, sono Antonio, amo la tecnologia, la cucina, il mare e lo sport, studio per diventare un Frontend Developer.</p>
@@ -55,43 +55,44 @@
             </div>
         </div>
     </section>
-    <a name="about"></a>
             <div class="spacer"></div>
-                <section class="about">                    
-                    <div class="testo">
-                        <h2>About</h2>
+                <section>
+                     <h2>About</h2>                   
+                    <div class="about">
                         <p>
                             Ho lavorato come cuoco per dieci anni, ora ho riscoperto la passione per l'informatica.<br>
                             Mi piace creare siti web, il mio obiettivo è diventare uno sviluppatore web esperto, partendo dalla parte di Frontend.<br>
                             Sono affascinato dalla continua evoluzione delle tecnologie e dall'opportunità di imparare e crescere costantemente in questo campo dinamico.            
-                        </p>
-                    </div>
-                    <img class="pc" src="assets/img/pc-bar.jpg" alt="office">
+                        </p>            
+                        <img class="io" src="assets/img/computer.jpg" alt="office">
+                    </div>                         
                 </section>
-                <a name="projects"></a>
                 <div class="spacer"></div>
                 <section class="projects">
                     <h2>Projects</h2>
                     <div class="bakery">
-                        <img src="assets/img/bakery-1983-screen.png" alt="Bakery 1983 site">
+                        <img class="io" src="assets/img/bakery-1983-screen.png" alt="Bakery 1983 site">
                     <div class="card">
                         <h3>Bakery 1983</h3>
                         <p>
-                            Home page responsive e funzionale, creata  con l'utilizzo di HTML e SASS, tema base per una qualsiasi attività nel settore alimentare.
+                            Home page responsive e funzionale, creata  con l'utilizzo di HTML e il precompilatore SASS.
                         </p>
+                        <p>Live: <a href="https://antonio-naccarella.github.io/Bakery1983/" target="_blank">Bakery1983</a></p>
                         <div class="lenguages">
                             <img src="assets/img/html5.png" alt="HTML">
+                            <img src="assets/img/css3.png" alt="CSS">
                             <img src="assets/img/sass.png" alt="SASS">
                         </div>
                     </div>
                     </div>
                     <div class="dna">
-                        <img src="assets/img/dna-screen.png">
+                        <img class="io" src="assets/img/dna-screen.png">
                         <div class="card">
                             <h3>DNA</h3>
                             <p>
-                            Il mio primo sito, realiazzato con HTML e CSS, responsive utilizzabile per vari blog.  
+                            Il mio primo progetto, realiazzato con HTML e CSS, per un ipotetico blog scentifico.  
                             </p>
+                            <p>Live: <a href="https://antonio-naccarella.github.io/DNA//" target="_blank">DNA</a></p>
                             <div class="lenguages">
                                 <img src="assets/img/html5.png" alt="HTML">
                                 <img src="assets/img/css3.png" alt="CSS">
@@ -99,11 +100,10 @@
                         </div>
                     </div>
                 </section>
-                <a name="contacts"></a>
                 <div class="spacer"></div>
                 <section class="contacts">
                     <h2>Contacts</h2>
-                    <p>Non esitare a contattarmi!</p>
+                    <p>Restiamo in contatto!</p>
                     <form class="contacts-form">
                         <div class="form-input">
                             <label for="name">Nome</label>
@@ -120,7 +120,8 @@
                     <button type="submit" onclick="sendMail()">Invia</button>
                     </form>
                 </section>
-        <div class="spacer"></div>
+    <a href="#"><img class="freccia" src="assets/img/freccia.png"></a>
+    <div class="spacer"></div>
     </article>
     <footer>
         <p>Antonio Naccarella</p>
