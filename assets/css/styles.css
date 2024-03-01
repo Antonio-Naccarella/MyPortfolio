@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dosis:wght@200..800&family=Oswald:wght@200..700&display=swap');
 :root {
-    --main-color: black;
-    --sfondo: white;
-    --second-color:rgba(0, 0, 0, .3);
+    --main-color: rgb(0, 0, 0);
+    --sfondo: rgb(255, 255, 255);
+    --second-color:rgba(0, 0, 0, 0.3);
     --font: "Abel", sans-serif;
 }
 
@@ -40,7 +40,7 @@ header{
     position: fixed;
     z-index: 9999;
     width: 100%;
-    border-bottom: 2px solid rgba(0, 0, 0, .3);
+    border-bottom: 2px solid var(--second-color);
     background-color: var(--sfondo);
 }
 
@@ -314,7 +314,7 @@ footer img{
      transform: rotate(270deg) scale(1) ;
      transition: all 600ms ease-in-out;
 }
-.io{
+.animation{
 scale: .8; opacity:0;
 animation: fade-in linear forwards;
 animation-timeline: view();
