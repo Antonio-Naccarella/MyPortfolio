@@ -252,7 +252,9 @@ section {
     text-decoration: none;
     color: var(--main-color);
 }
-
+.contacts img{
+    width: 40px;
+}
 .contacts-form {
     width: 80%;
     display: flex;
